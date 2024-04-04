@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.projectName {
+  font-family: 'Arizonia', cursive;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.image1{
+  margin-left: 70px;
+  /* margin-right: 100px; */
+}
+
+/* Add this CSS rule to create a white outline on hover */
+.read-button {
+  position: relative;
+}
+
+ .read-button:hover {
+  background-color: white;
+  color: #353686;
+  background: rgb(255,255,255);
+  background: linear-gradient(107deg, rgba(255,255,255,1) 0%, rgba(128,128,128,1) 72%);
+} 
+
+.read-button:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* border: 2px solid white; Adjust the border size as needed */
+  border-radius: 5px; /* Adjust the border radius as needed */
+  }
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+
+.blogContentDetails {
+  align-items: center;
+
+}
+
+/*From line 13 to 29 is the code contributed to style the scrollbar*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(7, 31, 48);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #09a0f1);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, antiquewhite);
+
+}
+.header1{
+  margin-top: 60px;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background: url(header.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content1{
+  text-align: center;
+}
+
+.heading1{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 80px;
+  line-height: 60px;
+  margin-bottom: 80px;
+}
+
+.heading1 .small{
+  display: block;
+  font-size: 40px;
+}
+
+.heading1 .no-fill{
+  font-style: italic;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+.btn{
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* Media Queries */
+
+@media (max-width: 1250px) {
+  .karma_image{
+    object-fit: contain;
+  }
+}
